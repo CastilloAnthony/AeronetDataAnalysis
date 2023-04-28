@@ -73,7 +73,7 @@ class Analysis:
         xDataArray = []
         yDataArray = []
         yDataError = [] 
-        count = 1
+        count = 0
         for head in header: # Iterate thru the list of headers
             if 'dd:mm:yyyy' in head or 'hh:mm:ss'  in head or 'day' in head.lower() or 'level' in head.lower() or 'name' in head.lower() or 'processed' in head.lower(): # Do not draw graphs of the dates, times, or anything including the 'day' keyword
                 continue # Omit these 'Data_Quality_Level', 'AERONET_Site_Name', 'Last_Date_Processed'
